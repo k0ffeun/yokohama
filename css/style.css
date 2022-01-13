@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "GilroyLight";
+  src: url(../fonts/Gilroy-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.ttf);
   font-weight: 400;
@@ -854,11 +860,13 @@ body {
 
 .footer__content-text {
   padding-left: 30px;
+  font-weight: 300;
   font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1900 - 320)));
   text-align: center;
 }
 
 .footer__content-text span {
+  font-weight: 700;
   color: #DC0D15;
   font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1900 - 320)));
 }
