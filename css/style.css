@@ -881,10 +881,6 @@ body {
   margin-bottom: 10%;
 }
 
-.footer__content-img:not(:last-child) {
-  margin-right: 20px;
-}
-
 .footer__content-text {
   padding-left: 30px;
   font-weight: 300;
