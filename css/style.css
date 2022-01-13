@@ -139,6 +139,14 @@ body {
   .header__tasks {
     margin-top: -19%;
   }
+  .tasks__text {
+    text-align: center;
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
+  }
+  .title {
+    padding: 0 30px;
+    font-size: calc(25px + (25 - 25) * ((100vw - 320px) / (1900 - 320)));
+  }
 }
 
 @media (max-width: 530px) {
@@ -154,6 +162,13 @@ body {
   }
   .tasks__auditory {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    margin-top: -46%;
+    margin-bottom: 117%;
   }
 }
 
@@ -223,6 +238,7 @@ body {
 @media (max-width: 768px) {
   .portraits__text {
     text-align: center;
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
   }
   .portraits__content {
     -ms-flex-wrap: wrap;
@@ -308,6 +324,7 @@ body {
 @media (max-width: 768px) {
   .decision__text {
     text-align: center;
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
   }
 }
 
@@ -322,6 +339,12 @@ body {
 .examples__inner {
   padding-top: 450px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .examples__text {
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
+  }
 }
 
 .slider {
@@ -691,12 +714,15 @@ body {
   }
   .result__text {
     text-align: center;
-    font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
   }
   .result__list {
     display: block;
     max-width: 60%;
     margin: 0 auto;
+  }
+  .result__item1, .result__item2, .result__item3 {
+    font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1900 - 320)));
   }
   .result__item3::before {
     left: -10%;
@@ -787,7 +813,7 @@ body {
 }
 
 .opinion__content-footer {
-  font-size: calc(10px + (20 - 1) * ((100vw - 320px) / (1900 - 320)));
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1900 - 320)));
 }
 
 .opinion__img {
@@ -815,7 +841,7 @@ body {
     width: 100%;
   }
   .opinion__content-footer {
-    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1900 - 320)));
   }
 }
 
@@ -834,7 +860,7 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .opinion__img {
     display: none;
   }
@@ -842,6 +868,13 @@ body {
     border: none;
     padding: 20px 30px;
     margin: 0 auto;
+  }
+  .opinion__content-text {
+    text-align: center;
+    font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1900 - 320)));
+  }
+  .opinion__content-footer {
+    text-align: center;
   }
 }
 
