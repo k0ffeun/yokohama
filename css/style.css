@@ -119,14 +119,15 @@ body {
 
 @media (max-width: 768px) {
   .header {
+    background-image: url(../images/header/bg_mini.png);
     background-position: 50%;
   }
   .logo {
-    margin-top: -10%;
-    margin-bottom: 40%;
+    margin-top: -18%;
+    margin-bottom: 58%;
   }
   .logo__img {
-    width: 95%;
+    width: 89%;
   }
   .header__inner {
     padding-top: 40%;
@@ -136,11 +137,15 @@ body {
     font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1900 - 320)));
   }
   .header__tasks {
-    margin-top: -45%;
+    margin-top: -19%;
   }
 }
 
 @media (max-width: 530px) {
+  .logo {
+    margin-top: -35%;
+    margin-bottom: 58%;
+  }
   .header__inner {
     padding-top: 70%;
   }
@@ -149,12 +154,6 @@ body {
   }
   .tasks__auditory {
     margin-left: 0;
-  }
-}
-
-@media (max-width: 425px) {
-  .logo {
-    margin-bottom: 90%;
   }
 }
 
@@ -523,7 +522,7 @@ body {
     height: 14px;
     width: 14px;
     border: transparent;
-    margin-right: 30px;
+    margin-right: 15px;
     cursor: pointer;
   }
   .slick-active button {
@@ -533,7 +532,7 @@ body {
     height: 14px;
     width: 14px;
     border: transparent;
-    margin-right: 30px;
+    margin-right: 15px;
     color: transparent;
   }
 }
@@ -708,16 +707,30 @@ body {
   .result__item2::before {
     left: -10%;
   }
+  .result__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .content-reuslt__title {
-    font-size: calc(30px + (45 - 30) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(16px + (27 - 16) * ((100vw - 320px) / (1900 - 320)));
   }
   .content-reuslt {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
   }
   .content-reuslt p {
-    font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (1900 - 320)));
+  }
+  .content-reuslt__plan {
+    margin-bottom: 0;
+  }
+  .content-reuslt__fact {
+    margin-top: 0;
   }
   .impressions {
     width: 50%;
@@ -851,11 +864,25 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 30px;
+}
+
+.footer__content-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .footer__content-img {
-  padding-left: 16%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.footer__content-img:not(:last-child) {
+  margin-right: 20px;
 }
 
 .footer__content-text {
@@ -871,26 +898,9 @@ body {
   font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1900 - 320)));
 }
 
-@media (min-width: 2150px) {
+@media (max-width: 888px) {
   .footer__content-img {
-    padding-left: 21%;
-  }
-}
-
-@media (max-width: 1180px) {
-  .footer__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (max-width: 982px) {
-  .footer__content-text {
-    text-align: start;
-  }
-  .footer__content-img {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -902,34 +912,21 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .footer__content-item {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
   .footer__content-text {
     text-align: center;
   }
-  .footer__content-img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 646px) {
-  .footer__title {
-    margin-bottom: 40px;
-  }
-  .footer__content-text {
-    padding-bottom: 20px;
-    padding-left: 0;
-    text-align: center;
-  }
-  .footer__content-text span {
-    color: #DC0D15;
-  }
-  .footer__content-img {
-    padding-left: 0;
-  }
   .footer__content-item {
-    padding-left: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    margin-bottom: 80px;
+  }
+  .footer__content-img {
+    margin-bottom: 20px;
   }
 }
