@@ -547,18 +547,19 @@ body {
     left: 52%;
   }
   .slick-dots button {
-    background-image: url(../images/examples/black_dot.svg);
-    height: 67%;
-    width: 36%;
-    margin-right: 12px;
+    background-color: black;
+    width: 5px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
     cursor: pointer;
     color: transparent;
   }
   .slick-active button {
-    background-image: url(../images/examples/red_dot.svg);
-    height: 67%;
-    width: 36%;
-    margin-right: 12px;
+    background-color: #DC0D15;
+    width: 5px;
+    height: 12px;
+    margin-right: 10px;
     color: transparent;
   }
 }
