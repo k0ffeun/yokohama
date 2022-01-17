@@ -548,8 +548,9 @@ body {
   }
   .slick-dots button {
     background-color: black;
-    width: 5px;
+    width: 12px;
     height: 12px;
+    padding-bottom: 12px;
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
@@ -557,10 +558,11 @@ body {
   }
   .slick-active button {
     background-color: #DC0D15;
-    width: 5px;
+    width: 12px;
     height: 12px;
     margin-right: 10px;
     color: transparent;
+    padding-bottom: 12px;
   }
 }
 
