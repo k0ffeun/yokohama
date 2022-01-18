@@ -422,7 +422,7 @@ body {
 
 @media (max-width: 2560px) {
   .slider__item-img {
-    width: 52%;
+    width: 60%;
   }
 }
 
@@ -440,14 +440,14 @@ body {
 
 @media (max-width: 2017px) {
   .slider__item-img {
-    width: 32%;
+    width: 40%;
   }
 }
 
 @media (max-width: 1900px) {
   .slider__item-img {
     margin: 0 auto;
-    width: 33%;
+    width: 37%;
   }
 }
 
@@ -475,7 +475,7 @@ body {
 
 @media (max-width: 1483px) {
   .slider__item-img {
-    width: 30%;
+    width: 34%;
   }
 }
 
